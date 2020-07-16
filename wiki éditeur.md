@@ -94,7 +94,7 @@ Pour accéder aux paramètres, il suffit de placer n'importe où dans la zone é
 
 `#{couleur paramètre};` applique la couleur nommée paramètre. Les couleurs supportées sont : black, grey, silver, white, theme, titre, fond.
 
-`#{police paramètre};` applique la police nommée paramètre. Les polices supportées sont correspondent aux polices standards supportées par les navigateurs web.
+`#{police paramètre};` applique la police nommée paramètre. Les polices supportées correspondent aux polices standards supportées par les navigateurs web.
 
 `#{taille paramètre};`applique la taille nommée paramètre. Les tailles supportées sont en pixel `12px`, en relative `1rem`, en pourcentage `100%` et les tailles CSS.
 

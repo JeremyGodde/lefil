@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang=fr>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/css_version 1.css"/>
+		<script src="js/editor.js"></script>
+		<script src="js/theme.js"></script>
+	</head>
+	<body>
+		<nav>
+			<button></button>
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="#">Scan</a></li>
+				<li><a href="bop_s.html">BOP's</a></li>
+				<li><a href="#">SPOTTED</a></li>
+				<li><a href="#">Concours</a></li>
+				<li><hr/></li>
+				<li><input type="radio" name="palette" checked id="palette_1" onclick="changeTheme('1')"/><label for="palette_1">Thème 1</label></li>
+				<li><input type="radio" name="palette" id="palette_2" onclick="changeTheme('2')"/><label for="palette_2">Thème 2</label></li>
+				<li><input type="radio" name="palette" id="palette_3" onclick="changeTheme('3')"/><label for="palette_3">Thème 3</label></li>
+				<li><input type="radio" name="palette" id="palette_4" onclick="changeTheme('4')"/><label for="palette_4">Thème 4</label></li>
+				<li><input type="radio" name="palette" id="palette_5" onclick="changeTheme('5')"/><label for="palette_5">Thème 5</label></li>
+				<li><hr/></li>
+				<li><input type="radio" name="format" checked id="format_A4" onclick="changeFormat('a4')"/><label for="format_A4">Format A4</label></li>
+				<li><input type="radio" name="format" id="format_A5" onclick="changeFormat('a5')"/><label for="format_A5">Format A5</label></li>
+			</ul>
+			<footer>
+				<h6> Le Fil</h6>
+				<h6> PVDC UTC </h6>
+				<a href="#">Contact</a>
+				<a href="#">Informations</a>
+			</footer>
+		</nav>	
+		<div class="main">
+			<div class="column">
+				<div class="profil">
+					<button class="tools" disabled>
+						⚙
+					</button>
+					<h1> <img src="img/pi.png"/> Jean Dupont </h1>
+					<div class="socialnetworks">
+						<a href="#"><img src="img/instagram.png"/></a>
+						<a href="#"><img src="img/twitter.png"/></a>
+						<a href="#"><img src="img/facebook.png"/></a>
+					</div>
+				</div>
+				
+				<div class="filtres">
+					<h3>Filtrer par rubriques</h3>
+					<ul>
+						<li><input type="checkbox" id="rubrique_1"><label for="rubrique_1">Rubrique 1</label></li>
+						<li><input type="checkbox" id="rubrique_2"><label for="rubrique_2">Rubrique 2</label></li>
+						<li><input type="checkbox" id="rubrique_3"><label for="rubrique_3">Rubrique 3</label></li>
+					</ul>
+					<h3>Filtrer par journaux</h3>
+					<ul>
+						<li><input type="checkbox" id="journal_1"><label for="journal_1">Journal 1</label></li>
+						<li><input type="checkbox" id="journal_2"><label for="journal_2">Journal 2</label></li>
+						<li><input type="checkbox" id="journal_3"><label for="journal_3">Journal 3</label></li>
+					</ul>
+				</div>
+			</div>
+			<div class="column">
+				<div class="corps" edit>
+					<button class="tools" onclick="setModeView(this)">
+						👁
+					</button>		
+					<textarea>t>Mediocre amicitiae gravitatem et morum<t
+!> left <size https://i.imgur.com/SMfcdYU.png <!
+
+e> #{couleur titre_3}; #{taille xxx-large}; Sinon comment <e e> #{police Arial Black}; va-t-on ?^>oui c'est important<^ Il fait beau,<e alors ça va. Notre ami l> www.google.com <:> Google <l fait des recherches
+
+.>
+Point 1<;
+Point 2<;
+Point 3<;
+Point 4
+<.
+
+.1>
+Point 1<;
+Point 2<;
+Point 3<;
+Point 4<;
+<.1
+
+
+a> https://assos.utc.fr/lefil/article/?paper=195 <a
+
+'>Sinon ! on peut aussi faire des citations comme celle-ci<'
+
+Ou bien des '>citations comme celle-là <' !</textarea>
+					<div class="view preview"></div>
+				</div>
+				<div class="corps">
+					<ul>
+						<li><a href="index.html">
+							<img src="img/bdbdec_flandres.png"/>
+							<div class="etiquette">
+								<h1>Seditiones gererentur</h1>
+								<div class="tag">bande dessinée</div>
+								<div class="tag">découverte</div>
+								<div class="tag corrige">corrigé</div>
+								<div class="tag publie">publié</div>
+								<div class="tag journal">lf 999</div>
+							</div>
+						</a></li>
+						<li><a href="#">
+							<div class="etiquette">
+								<h1>Article 2</h1>
+								<div class="tag">information</div>
+								<div class="tag brouillon">brouillon</div>
+								<div class="tag journal">lf 998</div>
+							</div>
+						</a></li>
+						<li><a href="#">
+							<div class="etiquette">
+								<h1>Article 3</h1>
+								<div class="tag">théâtre</div><div class="tag">humour</div>
+							</div>
+						</a></li>
+						<li><a href="#">
+							<div class="etiquette">
+								<h1>Article 4</h1>
+								<div class="tag">théâtre</div><div class="tag">découverte</div>
+							</div>
+						</a></li>
+						<li><a href="#">
+							<div class="etiquette">
+								<h1>Article 5</h1>
+								<div class="tag">jeux</div>
+							</div>
+						</a></li>
+					</ul>
+				</div>
+				<div class="corps rowscroll">
+					<h2>A participé aux numéros : </h2>
+					<div>
+						<img src="https://i.imgur.com/gkWVdWs.png" width="100%"/>
+						<div class="overlay">
+							<h3>Le Fil 999</h3>
+							<h5>17 juin 2036</h5>
+						</div>
+					</div>
+					<div>
+						<img src="https://i.imgur.com/hBXzy2l.png" width="100%"/>
+						<div class="overlay">
+							<h3>Le Fil 998</h3>
+							<h5>2 juin 2036</h5>
+						</div>
+					</div>
+					<div>
+						<img src="https://i.imgur.com/E2z71vT.jpg" width="100%"/>
+						<div class="overlay">
+							<h3>Le Fil 997</h3>
+							<h5>26 mai 2036</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

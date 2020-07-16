@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang=fr>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/css_version 1.css"/>
+		<script src="js/theme.js"></script>
+	</head>
+	<body>
+		<nav>
+			<button></button>
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="#">Scan</a></li>
+				<li><a href="#">BOP's</a></li>
+				<li><a href="#">SPOTTED</a></li>
+				<li><a href="#">Concours</a></li>
+				<li><hr/></li>
+				<li><input type="radio" name="palette" checked id="palette_1" onclick="changeTheme('1')"/><label for="palette_1">Thème 1</label></li>
+				<li><input type="radio" name="palette" id="palette_2" onclick="changeTheme('2')"/><label for="palette_2">Thème 2</label></li>
+				<li><input type="radio" name="palette" id="palette_3" onclick="changeTheme('3')"/><label for="palette_3">Thème 3</label></li>
+				<li><input type="radio" name="palette" id="palette_4" onclick="changeTheme('4')"/><label for="palette_4">Thème 4</label></li>
+				<li><input type="radio" name="palette" id="palette_5" onclick="changeTheme('5')"/><label for="palette_5">Thème 5</label></li>
+				<li><hr/></li>
+				<li><input type="radio" name="format" checked id="format_A4" onclick="changeFormat('a4')"/><label for="format_A4">Format A4</label></li>
+				<li><input type="radio" name="format" id="format_A5" onclick="changeFormat('a5')"/><label for="format_A5">Format A5</label></li>
+			</ul>
+			<footer>
+				<h6> Le Fil</h6>
+				<h6> PVDC UTC </h6>
+				<a href="#">Contact</a>
+				<a href="#">Informations</a>
+			</footer>
+		</nav>
+	<div class="bops">
+		<div class="discussion">
+			<article>
+				<div class="date">28 mai 2020</div>
+				<div class="uv">NF17</div>
+				Salut à tous, je suis ravi d'avoir échangé avec vous et ravi de vous quitter
+			</article>
+			<article>
+				<div class="uv">IA02</div>
+				Tu aimes le hasard, oui, mais tu n'aimes pas l'écrire, ça c'est le nom du joueur de foot
+			</article>
+			<article>
+				<div class="date">29 mai 2020</div>
+				<div class="uv">MS02</div>
+				*annonce une visio webex* VENEZ NOMBREUX, il y aura des jongleurs, des numéros exceptionnels avec des dressages d'animaux sauvages très féroces et des clowns hilarants !!!
+			</article>
+			<article>
+				<div class="date">2 juin 2020</div>
+				<div class="uv">IC01</div>
+				Mais c'est quoi un "TC04" ?
+			</article>
+			<article>
+				<div class="date">3 juin 2020</div>
+				<div class="uv">SC12</div>
+				Où voit-il qui ?
+				<div class="moderation">
+					<button class="accept">✓</button>
+					<button class="refuse">✗</button>
+				</div>
+			</article>
+			<article>
+				<div class="uv">CM06</div>
+				Personnellement, par le passé j'ai pas mal utilisé le Latex mais ses expériences me laissent perplexe et j'ai laissé tomber. Je ne vois vraiment pas de valeur ajoutée
+				<div class="moderation">
+					<button class="accept">✓</button>
+					<button class="refuse">✗</button>
+				</div>
+			</article>
+		</div>
+		<div class="entrees">
+			<input placeholder="UV" type="text"/><button class="help">?</button>
+			<textarea placeholder="L'électricité et moi, ça a été le coup de foudre"></textarea><button class="send"></button>
+		</div>
+	</div>
+	</body>
+</html>

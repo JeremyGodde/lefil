@@ -591,6 +591,18 @@ main .important:not(p):after,
 	content: " »";
 }
 
+main section:not(.header):not(.author) span.barre,
+.view section:not(.header):not(.author) span.barre
+{
+	text-decoration:line-through var(--theme);
+}
+
+main section:not(.header):not(.author) p.note-pied,
+.view section:not(.header):not(.author) p.note-pied
+{
+	font-size:60%;
+}
+
 /* H */
 
 main h2,
@@ -626,6 +638,14 @@ main section:not(.header):not(.author) a:not(.article),
 {
 	width: unset !important;
 }
+
+main section:not(.header):not(.author) a.note,
+.view section:not(.header):not(.author) a.note
+{
+	font-size:60%;
+	vertical-align:super;
+}
+
 a:hover
 {
 	cursor: pointer;

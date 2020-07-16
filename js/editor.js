@@ -76,7 +76,7 @@ function View(article,view)
 
 
 		//barre
-			contenu = contenu.replace(/b>/gi,"<span style=\"text-decoration:line-through var(--theme);\">"); // class=\"barre\"
+			contenu = contenu.replace(/b>/gi,"<span class=\"barre\">");
 			contenu = contenu.replace(/<b/gi,"</span>");
 
 
@@ -148,7 +148,7 @@ function View(article,view)
 			while(p>=0){
 				var note = contenu.substr(p+2,contenu.search(/<\^/)-p-2);
 				notebaspage++;
-				contenu = contenu.replace("^>"+note+"<^"," <a class=\"intern\" style=\"font-size:60%;vertical-align:super;\" href=\"#note_"+notebaspage+"\"> ["+notebaspage+"] </a>"); // class=\"note\"
+				contenu = contenu.replace("^>"+note+"<^"," <a class=\"intern note\" href=\"#note_"+notebaspage+"\"> ["+notebaspage+"] </a>");
 				baspage += "\nsmp;note_"+notebaspage+"\">["+notebaspage+"] "+note;
 				p = contenu.search(/\^>/);
 			}
@@ -157,10 +157,9 @@ function View(article,view)
 
 
 		// mise en forme des notes de bas de page
-			contenu = contenu.replace(/<'\nsmp;/g,"</p><p style=\"font-size:60%\" class=\"my-0\" id=\"");
-			contenu = contenu.replace(/<t\nsmp;/g,"</h2><p style=\"font-size:60%\" class=\"my-0\" id=\"");
-			contenu = contenu.replace(/\nsmp;/g,"</p><p style=\"font-size:60%\" class=\"my-0\" id=\""); // class=\"note-pied\"
-
+			contenu = contenu.replace(/<'\nsmp;/g,"</p><p class=\"note-pied\" id=\"");
+			contenu = contenu.replace(/<t\nsmp;/g,"</h2><p class=\"note-pied\" id=\"");
+			contenu = contenu.replace(/\nsmp;/g,"</p><p class=\"note-pied\" id=\"");
 
 		//mode d'édition
 			p = contenu.search(/e>/);
